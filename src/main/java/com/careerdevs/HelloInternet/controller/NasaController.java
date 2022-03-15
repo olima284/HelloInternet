@@ -3,7 +3,7 @@ package com.careerdevs.HelloInternet.controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 @RestController
-@RequestMapping
+@RequestMapping ("/nasa")
 
 public class NasaController {
     private String myNasaKey = "sKewRHb982KWI7QoEKZ9YhdLwkLpdzAcht9Jrnwe";
