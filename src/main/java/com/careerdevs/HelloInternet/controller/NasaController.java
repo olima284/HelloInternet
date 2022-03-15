@@ -10,5 +10,10 @@ public class NasaController {
 
     private String nasaApodEndpoint = "https://api.nasa.gov/planetary/apod?api_key=" + myNasaKey;
 
+@GetMapping ("/test")
+private String testRoute () {
+    return "testing, request recieved";
+}
+
 
 }
