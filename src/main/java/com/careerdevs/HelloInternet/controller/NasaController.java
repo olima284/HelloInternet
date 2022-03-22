@@ -15,7 +15,7 @@ public class NasaController {
     private String getApodDate;
     private final String nasaApodEndpoint = "https://api.nasa.gov/planetary/apod?api_key=" + myNasaKey + "/&date=" + getApodDate;
 
-        @GetMapping ("/nasa/apod")
+       @GetMapping ("/nasa/apod")
     public Object apodHandler (RestTemplate restTemplate){
             return restTemplate.getForObject(nasaApodEndpoint + myNasaKey + getApodDate,  Object.class );
         }
@@ -24,9 +24,4 @@ public class NasaController {
             return "DATE: " + date;
 }
 }
-//Note
-// local host must match port id and name(http://localhost:8080/nasa)
-//Manually kill port w/ ($ npx kill-port 8080)
 
-
-//
